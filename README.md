@@ -10,80 +10,65 @@ Foram usadas as seguintes tecnologias:
 
 Neste projeto vc pode:
 
-### HomePage
+### `HomePage`
 
-#### `barra de navegacao`
+- navegar entre as paginas disponives na barra de navegacao
 
-navegar entra as paginas disponives
+- filtrar os itens do inventarios por selecionar as categorias desejada no input dropbox
 
-#### `rodape`
+- caso a quantidade em estoque for 0, o produto nao eh mostrado
 
-navegar entra as paginas disponives
+- ver a descricao do produto clicando na imagem de cada produto 
 
-#### `filtro itens do inventario segundo categoria`
+- adicionar um produto ao carrinho
 
-vc pode selecionar as categorias desejada no input dropbox
+### `CartPopUp`
 
-#### `disponibilidade do itens no inventario`
+- visualizar todos os itens no carrinho
+- excluir itens do carrihno
 
-caso a quantidade em estoque for 0, o produto nao eh mostrado
+### `ClientPage`
 
-#### `card de produto`
+- Cadastro completo de um novo cliente com autocomplete configurado
+- Vizualizacao dos clientes cadastrados em uma div retratil
 
-cliando na imagem eh possivel ver a descricao do produto
-botao para adicionar ao carrinho
-
-### CartPopUp
-
-visualizacao de todos os itens no carrinho
-possibilidade de excluir itens do carrihno
-
-### ClientPage
-
-Cadastro completo de um novo cliente com autocomplete configurado
-Vizualizacao dos clientes cadastrados em uma div contraivel
-
-### FakeDataBank
+### `FakeDataBank`
 
 Disponivel no localStorage, inicial por arquivo JSON
 
-#### clients
-
-variable clients: Array<Clients>
-<code>
+### variable clients: Array\<Clients\>
+```js script
 class Clients: {
-id: string;
-full_name: string;
-email: string;
-phone_number: string;
-date_of_birth: Date;
-addresses: Array<Address>;
+    id: string;
+    full_name: string;
+    email: string;
+    phone_number: string;
+    date_of_birth: Date;
+    addresses: Array<Address>;
 }
-</code>
+```
 
+```js script
 class Address: {
-address_line_1: string; <!-- Endereco: rua e numero -->
-address_line_2: string; <!-- Complemento -->
-admin_area_1: string; <!-- Estado -->
-admin_area_2: string; <!-- Cidade -->
-postal_code: string; <!-- CEP -->
-country_code: string; <!-- codigo 2 letras ISO 3166-1 que identifica o pais -->
+  address_line_1: string; // Endereco: rua e numero
+  address_line_2: string; // Complemento
+  admin_area_1: string; // Estado
+  admin_area_2: string; // Cidade
+  postal_code: string; // CEP
+  country_code: string; // codigo 2 letras ISO 3166-1 que identifica o pais
 }
-
-#### products
-
-variable products: Array<Item>
-
+```
+### variable products: Array\<Item\>
+```js script
 class Item {
-id: string;
-name: string;
-unit_amount: Money;
-description: string;
-img: string;
-category: string;
-quantity: number = 0;
+  id: string;
+  name: string;
+  unit_amount: Money;
+  description: string;
+  img: string;
+  category: string;
+  quantity: number = 0;
 }
+```
 
-#### cart
-
-variable carr: Array<Item>
+### variable cart: Array\<Item\>
