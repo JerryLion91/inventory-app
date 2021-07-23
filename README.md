@@ -3,7 +3,7 @@
 Foram usadas as seguintes tecnologias:
 
 - React com typescript
-- Heroku para deployment
+- Firebase para deployment
 - Todos os dados ficam armazenados no localstorage
 
 ## Funcionalidades Disponiveis
@@ -18,7 +18,7 @@ Neste projeto vc pode:
 
 - caso a quantidade em estoque for 0, o produto nao eh mostrado
 
-- ver a descricao do produto clicando na imagem de cada produto 
+- ver a descricao do produto clicando na imagem de cada produto
 
 - adicionar um produto ao carrinho
 
@@ -37,6 +37,7 @@ Neste projeto vc pode:
 Disponivel no localStorage, inicial por arquivo JSON
 
 ### variable clients: Array\<Clients\>
+
 ```js script
 class Clients: {
     id: string;
@@ -58,7 +59,9 @@ class Address: {
   country_code: string; // codigo 2 letras ISO 3166-1 que identifica o pais
 }
 ```
+
 ### variable products: Array\<Item\>
+
 ```js script
 class Item {
   id: string;
