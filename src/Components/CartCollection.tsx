@@ -16,7 +16,7 @@ const CartCollection = ({
     <li className="collection-item black-text col s12">
       <div className="card horizontal">
         <div className="card-image">
-          <img src={item.img} height="100px" />
+          <img src={item.img} height="100px" alt={item.name} />
         </div>
         <div className="card-stacked">
           <div className="card-content col s12 valign-wrapper">

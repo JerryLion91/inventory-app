@@ -1,5 +1,5 @@
-import { Item, Money, Order } from 'data/Classes/Order';
-import { useState, useMemo, useEffect } from 'react';
+import { Item, Money } from 'data/Classes/Order';
+import { useState, useMemo } from 'react';
 
 export const useCart = () => {
   // localStorage.removeItem('cart');

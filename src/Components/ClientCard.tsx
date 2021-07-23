@@ -1,7 +1,6 @@
 import * as React from 'react';
-import { Client } from 'data/Classes/Client';
-import { Address } from 'data/Classes/Address';
-import { useData } from 'data/useData';
+import { Client } from 'data/Classes/Order';
+import { Address } from 'data/Classes/Order';
 
 interface ClientCardProps {
   putNewClient: Function;

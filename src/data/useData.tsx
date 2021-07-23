@@ -1,7 +1,6 @@
 import { clients as dataClients } from 'data/clients';
 import { products as dataProducts } from 'data/products';
-import { Item, Money } from 'data/Classes/Order';
-import { Client } from './Classes/Client';
+import { Item, Money, Client } from 'data/Classes/Order';
 import { v4 as uuidv4 } from 'uuid';
 import { useState, useMemo } from 'react';
 

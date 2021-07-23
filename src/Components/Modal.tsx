@@ -16,8 +16,7 @@ const Modal = ({
   buttonText,
 }: ModalProps): JSX.Element => {
   useEffect(() => {
-    var elems = document.querySelectorAll('.modal');
-    var instances = M.Modal.init(elems, {});
+    M.Modal.init(document.querySelectorAll('.modal'), {});
   }, []);
   return (
     <>

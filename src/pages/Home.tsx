@@ -15,7 +15,7 @@ import { useCart } from 'Hooks/useCart';
 
 const Home = () => {
   const [
-    _c,
+    _,
     products,
     { getFilteredProducts, getProductsCategories },
   ] = useData();

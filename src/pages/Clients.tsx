@@ -9,8 +9,7 @@ import { useData } from 'data/useData';
 import { Link } from 'react-router-dom';
 import ClientCard from 'Components/ClientCard';
 import Collapsible from 'Components/Collapsible';
-import Collection from 'Components/Collection';
-import { Client } from 'data/Classes/Client';
+import { Client } from 'data/Classes/Order';
 import CollectionItem from 'Components/CollectionItem';
 
 const Clients = () => {

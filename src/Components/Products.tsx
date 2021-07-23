@@ -22,6 +22,7 @@ const Products = ({ onClick, products }: ProductsProps): JSX.Element => {
                     style={{ cursor: 'pointer' }}
                     className="activator"
                     src={img}
+                    alt={name}
                   />
                   <a
                     onClick={() => handleClick(id, name)}
