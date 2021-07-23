@@ -6,6 +6,8 @@ Foram usadas as seguintes tecnologias:
 - Firebase para deployment
 - Todos os dados ficam armazenados no localstorage
 
+https://inventory-app0.web.app
+
 ## Funcionalidades Disponiveis
 
 Neste projeto vc pode:
