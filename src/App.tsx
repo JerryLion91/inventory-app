@@ -2,6 +2,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from 'pages/Home';
 import Clients from 'pages/Clients';
 
+//
+
 const App = () => {
   return (
     <Router>
