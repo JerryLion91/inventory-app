@@ -1,46 +1,87 @@
-# Getting Started with Create React App
+# Inventory-App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Foram usadas as seguintes tecnologias:
 
-## Available Scripts
+- React com typescript
+- Heroku para deployment
+- Todos os dados ficam armazenados no localstorage
 
-In the project directory, you can run:
+## Funcionalidades Disponiveis
 
-### `yarn start`
+Neste projeto vc pode:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### HomePage
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+#### `barra de navegacao`
 
-### `yarn test`
+navegar entra as paginas disponives
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### `rodape`
 
-### `yarn build`
+navegar entra as paginas disponives
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### `filtro itens do inventario segundo categoria`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+vc pode selecionar as categorias desejada no input dropbox
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### `disponibilidade do itens no inventario`
 
-### `yarn eject`
+caso a quantidade em estoque for 0, o produto nao eh mostrado
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### `card de produto`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+cliando na imagem eh possivel ver a descricao do produto
+botao para adicionar ao carrinho
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### CartPopUp
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+visualizacao de todos os itens no carrinho
+possibilidade de excluir itens do carrihno
 
-## Learn More
+### ClientPage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Cadastro completo de um novo cliente com autocomplete configurado
+Vizualizacao dos clientes cadastrados em uma div contraivel
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### FakeDataBank
+
+Disponivel no localStorage, inicial por arquivo JSON
+
+#### clients
+
+variable clients: Array<Clients>
+
+class Clients: {
+id: string;
+full_name: string;
+email: string;
+phone_number: string;
+date_of_birth: Date;
+addresses: Array<Address>;
+}
+class Address: {
+address_line_1: string; <!-- Endereco: rua e numero -->
+address_line_2: string; <!-- Complemento -->
+admin_area_1: string; <!-- Estado -->
+admin_area_2: string; <!-- Cidade -->
+postal_code: string; <!-- CEP -->
+country_code: string; <!-- codigo 2 letras ISO 3166-1 que identifica o pais -->
+}
+
+#### products
+
+variable products: Array<Item>
+
+class Item {
+id: string;
+name: string;
+unit_amount: Money;
+description: string;
+img: string;
+category: string;
+quantity: number = 0;
+}
+
+#### cart
+
+variable carr: Array<Item>

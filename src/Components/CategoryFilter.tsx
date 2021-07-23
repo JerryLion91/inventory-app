@@ -23,7 +23,7 @@ const CategoryFilter = ({
           onChange={handleChange}
         >
           <option value="" disabled>
-            Choose your option
+            Escolha as categorias
           </option>
           {categories.map((category, index) => {
             return (
