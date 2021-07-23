@@ -50,7 +50,7 @@ Disponivel no localStorage, inicial por arquivo JSON
 #### clients
 
 variable clients: Array<Clients>
-
+<code>
 class Clients: {
 id: string;
 full_name: string;
@@ -59,6 +59,8 @@ phone_number: string;
 date_of_birth: Date;
 addresses: Array<Address>;
 }
+</code>
+
 class Address: {
 address_line_1: string; <!-- Endereco: rua e numero -->
 address_line_2: string; <!-- Complemento -->
